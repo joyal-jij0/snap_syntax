@@ -100,9 +100,10 @@ body:has(.parent [class~="child"][class~="6"]:hover) {
 }
 
 .background-image {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: auto;
   object-fit: contain;
+  border-radius: 10px;
 }
 
 .overlay-gif {
@@ -119,7 +120,7 @@ body:has(.parent [class~="child"][class~="6"]:hover) {
 /* Zoom out effect on hover */
 [class~="child"]:hover .background-image,
 [class~="child"]:hover .overlay-gif {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .full-page-image img {
