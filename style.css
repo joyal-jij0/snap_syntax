@@ -8,41 +8,35 @@
   top: 400px;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  width: 90%;
+.sticky{
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  z-index: 1000;
-}
-
-/* Style for navbar items */
-nav .h2 {
-  cursor: pointer;
-  padding: 10px;
-  position: relative; /* Make sure the parent has relative positioning */
-}
-
-nav .h2 .child {
-  margin-top: 0vh; /* Increase this value for a bigger gap */
-  position: relative;
-  top: 30px; /* Increase this value for a bigger gap */
-}
-
-.relative-container {
-  position: relative;
-  width: 100%;
-  height: 400px; /* Adjust height as needed */
-}
-
-.relative-container .child {
-  position: absolute;
-  /* Placeholder offsets */
+  position: sticky;
   top: 0;
-  left: 0;
-  padding: 10px;
+  text-decoration: underline;
+}
+.container2{
+  position: absolute;
+}
+section {
+  padding-right: 12%;
+  padding-left: 50%;
+  margin-inline: auto;
+  padding-inline: 20px;
+  margin-left: 50%;
+}
+nav {
+  display: grid;
+  position: sticky;
+  grid-template-columns: calc(25% - 10px) calc(7% - 10px) calc(18% - 5px) calc(50% - 5px);
+  column-gap: 10px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.hero-container{
+  font-size: 35px;
+  margin-bottom: 25px;
 }
 
 body, html {
