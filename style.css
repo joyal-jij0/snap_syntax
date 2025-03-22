@@ -42,7 +42,35 @@ nav {
 body, html {
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s;
+  transition: background-color 0.1s;
+}
+
+body {
+  transition: background-color 0.5s ease;
+}
+
+body:has(.parent [class~="child"][class~="1"]:hover) {
+  background-color: #ffcccc; /* Light red */
+}
+
+body:has(.parent [class~="child"][class~="2"]:hover) {
+  background-color: #ccffcc; /* Light green */
+}
+
+body:has(.parent [class~="child"][class~="3"]:hover) {
+  background-color: #ccccff; /* Light blue */
+}
+
+body:has(.parent [class~="child"][class~="4"]:hover) {
+  background-color: #ffffcc; /* Light yellow */
+}
+
+body:has(.parent [class~="child"][class~="5"]:hover) {
+  background-color: #ffccff; /* Light purple */
+}
+
+body:has(.parent [class~="child"][class~="6"]:hover) {
+  background-color: #ccffff; /* Light cyan */
 }
 
 .container {
