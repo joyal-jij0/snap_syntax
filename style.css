@@ -49,12 +49,14 @@ body {
   transition: background-color 0.5s ease;
 }
 
+
 body:has(.parent [class~="child"][class~="1"]:hover) {
   background-color: #ffcccc; /* Light red */
 }
 
 body:has(.parent [class~="child"][class~="2"]:hover) {
-  background-color: #ccffcc; /* Light green */
+  background-color:
+  #ccffcc; /* Light green */
 }
 
 body:has(.parent [class~="child"][class~="3"]:hover) {
@@ -107,6 +109,17 @@ body:has(.parent [class~="child"][class~="6"]:hover) {
   position: absolute;
   width: 50%;
   height: auto;
+}
+
+/* Add transitions to images for smooth zoom effect */
+.background-image, .overlay-gif {
+  transition: transform 0.4s ease;
+}
+
+/* Zoom out effect on hover */
+[class~="child"]:hover .background-image,
+[class~="child"]:hover .overlay-gif {
+  transform: scale(1.05);
 }
 
 .full-page-image img {
