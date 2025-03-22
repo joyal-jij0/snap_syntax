@@ -1,6 +1,8 @@
 .hero-container {
   position: relative;
   width: 100%;
+  font-size: 35px;
+  margin-bottom: 25px;
 }
 
 .hero-container > h2 {
@@ -16,16 +18,18 @@
   text-decoration: underline;
   z-index: 100;
 }
+
 .container2{
   position: absolute;
+  width: 100%;
 }
+
 section {
-  padding-right: 12%;
-  padding-left: 50%;
   margin-inline: auto;
   padding-inline: 20px;
   margin-left: 50%;
 }
+
 nav {
   display: grid;
   position: sticky;
@@ -33,11 +37,6 @@ nav {
   column-gap: 10px;
   margin-inline: auto;
   padding-inline: 20px;
-}
-
-.hero-container{
-  font-size: 35px;
-  margin-bottom: 25px;
 }
 
 body, html {
@@ -53,7 +52,6 @@ body, html {
   align-items: center;
 }
 
-
 .parent {
   width: 100%;
   display: flex;
@@ -64,11 +62,11 @@ body, html {
 .child {
   position: relative;
   width: 60%;
-  /* height: 600px; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px 0;
+  scroll-margin-top: 90vh;
 }
 
 .background-image {
@@ -89,15 +87,7 @@ body, html {
   display: block;
 }
 
-.child {
-  scroll-margin-top: 90vh;
-}
-
-
-
-
 /* debugging */
-
 div {
   border: 1px solid red;
 }
