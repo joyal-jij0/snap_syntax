@@ -1,5 +1,5 @@
 .hero-container {
-  position: relative;
+  position: absolute;
   width: 100%;
   font-size: 35px;
   margin-bottom: 25px;
@@ -33,10 +33,15 @@ section {
 nav {
   display: grid;
   position: sticky;
+  top: 0;
   grid-template-columns: calc(25% - 10px) calc(7% - 10px) calc(18% - 5px) calc(50% - 5px);
   column-gap: 10px;
   margin-inline: auto;
   padding-inline: 20px;
+  z-index: 200;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for visual separation */
 }
 
 body, html {
@@ -103,7 +108,7 @@ body:has(.parent [class~="child"][class~="6"]:hover) {
   width: 80%;
   height: auto;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .overlay-gif {
@@ -123,10 +128,16 @@ body:has(.parent [class~="child"][class~="6"]:hover) {
   transform: scale(1.02);
 }
 
-.full-page-image img {
+.full-cover-img {
+  margin-top: 100px;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100vh;
+}
+
+.full-cover-img > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* debugging */
