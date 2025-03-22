@@ -22,4 +22,31 @@ nav {
 nav .h2 {
   cursor: pointer;
   padding: 10px;
+  position: relative; /* Make sure the parent has relative positioning */
+}
+
+nav .h2 .child {
+  margin-top: 0vh; /* Increase this value for a bigger gap */
+  position: relative;
+  top: 30px; /* Increase this value for a bigger gap */
+}
+
+.relative-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+}
+
+.relative-container .child {
+  position: absolute;
+  /* Placeholder offsets */
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+/* debugging */
+
+div {
+  border: 1px solid red;
 }
